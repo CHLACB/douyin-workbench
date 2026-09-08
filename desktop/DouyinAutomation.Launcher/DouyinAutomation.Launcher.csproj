@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>抖音自动化启动器</AssemblyName>
+    <RootNamespace>DouyinAutomation.Launcher</RootNamespace>
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <Version>1.2.0</Version>
+    <Product>抖音自动化启动器</Product>
+    <Description>抖音自动化成品启动与连接诊断</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../DouyinAutomation.Desktop/WorkspaceTheme.cs" Link="WorkspaceTheme.cs" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,15 @@
+node_modules/
+.runtime/
+dist/
+**/bin/
+**/obj/
+.vs/
+.env
+.env.*
+!.env.example
+*.log
+*.zip
+*.user
+*.suo
+session.json
+settings.json

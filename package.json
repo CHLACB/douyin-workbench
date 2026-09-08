@@ -1,0 +1,34 @@
+{
+  "name": "douyin-browser-automation",
+  "version": "1.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "launcher": "dotnet run --project desktop/DouyinAutomation.Launcher/DouyinAutomation.Launcher.csproj",
+    "launcher:publish": "dotnet publish desktop/DouyinAutomation.Launcher/DouyinAutomation.Launcher.csproj -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -o dist/launcher",
+    "gui": "dotnet run --project desktop/DouyinAutomation.Desktop/DouyinAutomation.Desktop.csproj",
+    "desktop": "dotnet run --project desktop/DouyinAutomation.Desktop/DouyinAutomation.Desktop.csproj",
+    "desktop:publish": "dotnet publish desktop/DouyinAutomation.Desktop/DouyinAutomation.Desktop.csproj -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true -p:DebugType=None -o dist/DouyinAutomation.Desktop",
+    "product:publish": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/publish-product.ps1",
+    "console": "node src/cli.js console",
+    "browser:open": "node src/cli.js browser open --once",
+    "browser:serve": "node src/cli.js browser open",
+    "browser:close": "node src/cli.js browser close",
+    "browser:status": "node src/cli.js browser status",
+    "douyin:input-search": "node src/cli.js douyin input-search",
+    "douyin:find-search": "node src/cli.js douyin find-search",
+    "douyin:open-video": "node src/cli.js douyin open-video",
+    "douyin:open-comments": "node src/cli.js douyin open-comments",
+    "douyin:current-video": "node src/cli.js douyin current-video",
+    "douyin:send-comment": "node src/cli.js douyin send-comment",
+    "douyin:watch-cycle": "node src/cli.js douyin watch-cycle",
+    "douyin:search-cycle": "node src/cli.js douyin search-cycle",
+    "douyin:full-cycle": "node src/cli.js douyin full-cycle",
+    "douyin:collect-comments": "node src/cli.js douyin collect-comments",
+    "doctor": "node src/cli.js doctor",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
