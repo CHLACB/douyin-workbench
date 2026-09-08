@@ -31,7 +31,7 @@ Chrome DevTools Protocol → 专用 Chrome
 桌面界面 → 兼容 chat/completions 的模型服务
 ```
 
-源码分为桌面 UI、应用逻辑、浏览器/CDP 基础设施与本地测试。详细说明见 [使用文档](docs/USAGE.zh-CN.md) 和 [架构说明](docs/ARCHITECTURE.zh-CN.md)。
+源码分为桌面 UI、应用逻辑、浏览器/CDP 基础设施与本地测试。详细说明见 [使用文档](USAGE.zh-CN.md) 和 [架构说明](ARCHITECTURE.zh-CN.md)。
 
 ## 数据与使用边界
 
