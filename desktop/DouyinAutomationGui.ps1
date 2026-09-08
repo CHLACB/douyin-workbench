@@ -1,4 +1,4 @@
-﻿Add-Type -AssemblyName System.Windows.Forms
+Add-Type -AssemblyName System.Windows.Forms
 Add-Type -AssemblyName System.Drawing
 
 $ErrorActionPreference = "Stop"
@@ -506,6 +506,3 @@ $split.Panel2.Controls.Add($txtLog)
 
 $form.Add_Shown({ Refresh-State })
 [System.Windows.Forms.Application]::Run($form)
-
-
-
